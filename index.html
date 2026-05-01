@@ -3,84 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="./index.html" href="https://fonts.googleapis.com" />
-    <link rel="./index.html" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"/>
+    <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Web Studio</title>
   </head>
-
   <body>
-    <header class="header">
-      <div class="header-container container">
-        <nav class="navigate">
-          <a href="./index.html" class="logo header-container-link"><span class="log-web">Web</span>Studio</a>
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="page-nav">
+          <a href="./index.html" class="logo">
+            <span class="logo-part">Web</span>Studio
+          </a>
 
-          <ul class="nav-ul">
-            <li><a href="./index.html" class="nav-link header-container-link">Studio</a></li>
-            <li><a href="./index.html" class="nav-link header-container-link">Portfolio</a></li>
-            <li><a href="./index.html" class="nav-link header-container-link">Contacts</a></li>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <address class="contact">
+
+        <address class="contacts">
           <ul class="contact-list">
-            <li class="secondary-text">
-              <a href="mailto:info@devstudio.com" class="contact-send header-container-link">info@devstudio.com</a>
+            <li class="contact-item">
+              <a href="mailto:info@devstudio.com" class="contact-link">
+                info@devstudio.com
+              </a>
             </li>
-            <li class="secondary-text">
-              <a href="tel:+110001111111" class="contact-send header-container-link">+11 (000) 111-11-11</a>
+            <li class="contact-item">
+              <a href="tel:+110001111111" class="contact-link">
+                +11 (000) 111-11-11
+              </a>
             </li>
           </ul>
         </address>
       </div>
     </header>
+
     <main>
-      <section class="hero-image section">
+      <section class="hero-section">
         <div class="container">
-          <div class="hero-container">
-            <h1 class="hero-image-h1">Effective Solutions for Your Business</h1>
-            <button type="button" class="order-button">Order Service</button>
-          </div>
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
-      <section class="our-features section">
+      <section class="features-section section">
         <div class="container">
           <h2 class="visually-hidden">Our Features</h2>
-          <ul class="our-features-container-ul">
-            <li class="our-features-container-ul-li">
-              <h3 class="our-features-h3">Strategy</h3>
-              <p class="our-features-p">
+          <ul class="features-list">
+            <li class="features-item">
+              <h3 class="feature-title">Strategy</h3>
+              <p class="feature-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="our-features-container-ul-li">
-              <h3 class="our-features-h3">Punctuality</h3>
-              <p class="our-features-p">
+            <li class="features-item">
+              <h3 class="feature-title">Punctuality</h3>
+              <p class="feature-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="our-features-container-ul-li">
-              <h3 class="our-features-h3">Diligence</h3>
-              <p class="our-features-p">
+            <li class="features-item">
+              <h3 class="feature-title">Diligence</h3>
+              <p class="feature-description">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
             </li>
-            <li class="our-features-container-ul-li">
-              <h3 class="our-features-h3">Technologies</h3>
-              <p class="our-features-p">
+            <li class="features-item">
+              <h3 class="feature-title">Technologies</h3>
+              <p class="feature-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -88,132 +97,160 @@
           </ul>
         </div>
       </section>
-      <section class="our-team section">
+
+      <section class="team-section section">
         <div class="container">
-          <h2 class="our-team-h2">Our Team</h2>
-          <ul class="our-team-list">
-            <li class="our-team-li">
-              <img class="our-team-li-img"
-                src="./images/img-3.jpg"
-                alt="Mark Guerrero photo"
+          <h2 class="team-title">Our Team</h2>
+
+          <ul class="team-list">
+            <li class="team-item">
+              <img
+                class="team-member-photo"
+                src="./images/mark-guerrero.jpg"
+                width="264"
+                height="260"
+                alt="Mark Guerrero"
               />
-              <div class="card-content">
-                <h3 class="our-team-h3">Mark Guerrero</h3>
-                <p class="our-team-p">Product Designer</p>
+              <div class="team-card-text">
+                <h3 class="team-member-name">Mark Guerrero</h3>
+                <p class="team-member-title">Product Designer</p>
               </div>
             </li>
-            <li class="our-team-li">
-              <img class="our-team-li-img"
-                src="./images/img-2.jpg"
-                alt="Tom Ford photo"
-                
+            <li class="team-item">
+              <img
+                class="team-member-photo"
+                src="./images/tom-ford.jpg"
+                width="264"
+                alt="Tom Ford"
               />
-              <div class="card-content">
-                <h3 class="our-team-h3">Tom Ford</h3>
-                <p class="our-team-p">Frontend Developer</p>
+              <div class="team-card-text">
+                <h3 class="team-member-name">Tom Ford</h3>
+                <p class="team-member-title">Frontend Developer</p>
               </div>
             </li>
-            <li class="our-team-li">
-              <img class="our-team-li-img"
-                src="./images/img-1.jpg"
-                alt="Camila Garcia photo"
-                
+            <li class="team-item">
+              <img
+                class="team-member-photo"
+                src="./images/camila-garcia.jpg"
+                width="264"
+                alt="Camila Garcia"
               />
-              <div class="card-content">
-                <h3 class="our-team-h3">Camila Garcia</h3>
-                <p class="our-team-p">Marketing</p>
+              <div class="team-card-text">
+                <h3 class="team-member-name">Camila Garcia</h3>
+                <p class="team-member-title">Marketing</p>
               </div>
             </li>
-            <li class="our-team-li">
-              <img class="our-team-li-img"
-                src="./images/img.jpg"
-                alt="Daniel Wilson photo"
+            <li class="team-item">
+              <img
+                class="team-member-photo"
+                src="./images/daniel-wilson.jpg"
+                width="264"
+                alt="Daniel Wilson"
               />
-              <div class="card-content">
-                <h3 class="our-team-h3">Daniel Wilson</h3>
-                <p class="our-team-p">UI Designer</p>
+              <div class="team-card-text">
+                <h3 class="team-member-name">Daniel Wilson</h3>
+                <p class="team-member-title">UI Designer</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="our-portfolio section">
+
+      <section class="portfolio-section section">
         <div class="container">
-          <h2 class="our-portfolio-h2">Our Portfolio</h2>
-          <ul class="our-portfolio-container-ul">
-            <li class="our-portfolio-container-ul-li">
+          <h2 class="portfolio-title">Our Portfolio</h2>
+
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
               <img
-                src="./images/pf-1.jpg"
+                src="./images/banking.jpg"
+                width="360"
                 alt="Banking App"
+                class="portfolio-image"
               />
-              <div class="our-portfolio-card">
-                <h3 class="our-portfolio-h3">Banking App</h3>
-                <p class="our-portfolio-p">App</p>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-item-title">Banking App</h3>
+                <p class="portfolio-item-text">App</p>
               </div>
             </li>
-            <li class="our-portfolio-container-ul-li">
+
+            <li class="portfolio-item">
               <img
-                src="./images/pf-2.jpg"
+                src="./images/payment.jpg"
+                width="360"
                 alt="Cashless Payment"
+                class="portfolio-image"
               />
-              <div class="our-portfolio-card">
-                <h3 class="our-portfolio-h3">Cashless Payment</h3>
-                <p class="our-portfolio-p">Marketing</p>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-item-title">Cashless Payment</h3>
+                <p class="portfolio-item-text">Marketing</p>
               </div>
             </li>
-            <li class="our-portfolio-container-ul-li">
+
+            <li class="portfolio-item">
               <img
-                src="./images/pf-3.jpg"
+                src="./images/app.jpg"
+                width="360"
                 alt="Meditation App"
+                class="portfolio-image"
               />
-              <div class="our-portfolio-card">
-                <h3 class="our-portfolio-h3">Meditation App</h3>
-                <p class="our-portfolio-p">App</p>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-item-title">Meditation App</h3>
+                <p class="portfolio-item-text">App</p>
               </div>
             </li>
-            <li class="our-portfolio-container-ul-li">
+
+            <li class="portfolio-item">
               <img
-                src="./images/pf-4.jpg"
+                src="./images/taxi.jpg"
+                width="360"
                 alt="Taxi Service"
+                class="portfolio-image"
               />
-              <div class="our-portfolio-card">
-                <h3 class="our-portfolio-h3">Taxi Service</h3>
-                <p class="our-portfolio-p">Marketing</p>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-item-title">Taxi Service</h3>
+                <p class="portfolio-item-text">Marketing</p>
               </div>
             </li>
-            <li class="our-portfolio-container-ul-li">
+
+            <li class="portfolio-item">
               <img
-                src="./images/pf-5.jpg"
+                src="./images/screen.jpg"
+                width="360"
                 alt="Screen Illustrations"
+                class="portfolio-image"
               />
-              <div class="our-portfolio-card">
-                <h3 class="our-portfolio-h3">Screen Illustrations</h3>
-                <p class="our-portfolio-p">Design</p>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-item-title">Screen Illustrations</h3>
+                <p class="portfolio-item-text">Design</p>
               </div>
             </li>
-            <li class="our-portfolio-container-ul-li">
+
+            <li class="portfolio-item">
               <img
-                src="./images/pf-6.jpg"
+                src="./images/courses.jpg"
+                width="360"
                 alt="Online Courses"
+                class="portfolio-image"
               />
-              <div class="our-portfolio-card">
-                <h3 class="our-portfolio-h3">Online Courses</h3>
-                <p class="our-portfolio-p">Marketing</p>
+              <div class="portfolio-card-text">
+                <h3 class="portfolio-item-title">Online Courses</h3>
+                <p class="portfolio-item-text">Marketing</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="page-footer">
       <div class="container">
-        <div class="container-footer-text">
-          <a class="footer-a logo" href="./index.html"><span class="log-web">Web</span>Studio</a>
-          <p class="footer-p">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
+        <a href="./index.html" class="logo footer-logo">
+          <span class="logo-part">Web</span>Studio
+        </a>
+        <p class="footer-description">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
       </div>
     </footer>
   </body>
